@@ -1,0 +1,8 @@
+prefix=/home/han/catkin_ws/devel
+
+Name: covid_robot_description
+Description: Description of covid_robot_description
+Version: 1.2.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: urdf
