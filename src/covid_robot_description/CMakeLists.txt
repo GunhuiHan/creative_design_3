@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES nexus_4wd_mecanum_description
-  CATKIN_DEPENDS urdf
+  CATKIN_DEPENDS urdf 
 #  DEPENDS system_lib
 )
 
