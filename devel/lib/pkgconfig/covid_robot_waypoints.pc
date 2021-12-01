@@ -1,0 +1,8 @@
+prefix=/home/han/catkin_ws/devel
+
+Name: covid_robot_waypoints
+Description: Description of covid_robot_waypoints
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

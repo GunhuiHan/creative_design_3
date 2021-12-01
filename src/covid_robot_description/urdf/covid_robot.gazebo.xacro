@@ -5,7 +5,7 @@
   <xacro:arg name="imu_visual"    default="false"/>
 
   <gazebo reference="base_link">
-    <material>Gazebo/DarkGrey</material>
+    <material>Gazebo/FlatBlack</material>
   </gazebo>
 
   <gazebo reference="wheel_left_link">
@@ -16,7 +16,7 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link">
@@ -27,33 +27,42 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
-  <gazebo reference="wheel_left_link_4">
-    <material>Gazebo/FlatBlack</material>
+  <gazebo reference="wheel_left_link_1">
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link_1">
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
-  <gazebo reference="wheel_left_link_4_steer">
-    <material>Gazebo/FlatBlack</material>
+  <gazebo reference="wheel_left_link_1_steer">
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link_1_steer">
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <gazebo reference="wheel_left_link_steer">
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link_steer">
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/DarkGrey</material>
   </gazebo>
 
+  <gazebo reference="body_side_right">
+    <material>Gazebo/LightYellow</material>
+    <commandTopic>/turtle1/cmd_vel</commandTopic>
+  </gazebo>
+
+  <gazebo reference="body_side_left">
+    <material>Gazebo/LightYellow</material>
+    <commandTopic>/turtle1/cmd_vel</commandTopic>
+  </gazebo>
 
 
   <gazebo reference="caster_back_right_link">
@@ -100,9 +109,9 @@
       <leftJoint>wheel_left_joint</leftJoint>
       <rightJoint>wheel_right_joint</rightJoint>
       <wheelSeparation>0.287</wheelSeparation>
-      <wheelDiameter>0.066</wheelDiameter>
+      <wheelDiameter>0.2</wheelDiameter>
       <wheelAcceleration>1</wheelAcceleration>
-      <wheelTorque>10</wheelTorque>
+      <wheelTorque>100</wheelTorque>
       <rosDebugLevel>na</rosDebugLevel>
     </plugin>
   </gazebo>
