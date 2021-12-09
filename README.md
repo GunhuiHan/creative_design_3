@@ -1,4 +1,4 @@
-# creative_design_3
+# cocobot simulation product for creative design 3 class in yonsei university
 
 # commands
 # gazebo (custom)
@@ -12,6 +12,9 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 export TURTLEBOT3_MODEL=waffle
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
+# navigation (turtlebot3 package)
+
+# waypoints driving
 
 # covid_robot urdf location
 covid_robot_description/urdf/covid_robot.urdf
